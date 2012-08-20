@@ -10,5 +10,3 @@ class SaveSpecsFileCommand(sublime_plugin.TextCommand):
 			if ntpath.basename(v.file_name())[0:5] == "test.":
 				# print(ntpath.basename(v.file_name()))
 				v.run_command("save")
-
-# Sublime Text 2 command that triggers the mocha.js watcher by saving the specs file.
